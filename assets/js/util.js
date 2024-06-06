@@ -287,9 +287,7 @@
 				if (config.hideOnEscape)
 					$window.on('keydown', function(event) {
 
-						// warning ts(6385): 'keyCode' is deprecated.
-						//if (event.keyCode == 27)
-						if (event.key == 'Escape')
+						if (event.keyCode == 27)
 							$this._hide(event);
 
 					});
